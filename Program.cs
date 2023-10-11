@@ -105,7 +105,7 @@ class Program
     private static async Task  CallAPI(Record record)
     {
         var client = new HttpClient();
-        var request = new HttpRequestMessage(HttpMethod.Post, "https://docs.google.com/forms/d/e/1FAIpQLSc02PKBwg1HT8yfRdbXz6c4EiMOjehsfuiksRl95J_wxo88jA/formResponse");
+        var request = new HttpRequestMessage(HttpMethod.Post, "https://docs.google.com/forms/d/e/{API-KEY}formResponse");
         // request.Headers.Add("authority", "docs.google.com");
         // request.Headers.Add("accept", "text/html,application/x-www-form-urlencoded,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7");
         // request.Headers.Add("accept-language", "en-US,en;q=0.9");
